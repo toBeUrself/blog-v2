@@ -1,2 +1,1 @@
-# blog-v2
-this repo for blog v2 with vuejs
+## create blog-v2 folder
