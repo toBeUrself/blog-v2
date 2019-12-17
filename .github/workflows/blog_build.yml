@@ -16,7 +16,7 @@ jobs:
         npm run build
   deloy:
     needs: build
-    runs-on: macos-lates
+    runs-on: macos-latest
     steps:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
