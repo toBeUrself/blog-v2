@@ -14,10 +14,10 @@ jobs:
       run: |
         npm ci
         npm run build
-    - name: Build and Deploy
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.forAction }}
         BASE_BRANCH: master # The branch the action should deploy from.
         BRANCH: master # The branch the action should deploy to.
-        FOLDER: blog-v2 # The folder the action should deploy.
+        FOLDER: dist # The folder the action should deploy.
