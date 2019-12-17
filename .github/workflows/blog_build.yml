@@ -16,8 +16,10 @@ jobs:
         npm run build
   deloy:
     needs: build
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
+    - name: CheckOut
+      uses: actions/checkout@v1
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
